@@ -16,3 +16,4 @@ learning-python = "src.main:main"
 clean-cache = "src.scripts.clean_cache:clean_cache"
 
 [tool.hatch.build.targets.wheel]
+packages = ["src"]
