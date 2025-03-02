@@ -7,15 +7,11 @@ name = "learning-python"
 version = "0.1.0"
 description = "Simple CLI app for learning Python basics"
 readme = "README.md"
-requires-python = ">=3.8"
 authors = [{ name = "Ahmad Hasan Maki" }]
+requires-python = ">=3.12"
 dependencies = ["rich>=13.0.0"]
 
 [project.scripts]
-learning-python = "src.main:main"
+learning-python = "main:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src"]
-
-[tool.uv]
-python = "3.8"
