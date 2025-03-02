@@ -112,3 +112,7 @@ def calculate_area() -> None:
     # Tampilkan hasil dengan format yang rapi
     result_unit = f"{unit}²"
     console.print(f"[bold green]Luas {shape}: {result:.2f} {result_unit}[/bold green]")
+
+
+if __name__ == "__main__":
+    calculate_area()
