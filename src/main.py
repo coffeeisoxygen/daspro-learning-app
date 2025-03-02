@@ -3,7 +3,6 @@
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Prompt
-
 from .calculator import calculator
 from .data_types import show_data_types
 from .geometry import calculate_area
