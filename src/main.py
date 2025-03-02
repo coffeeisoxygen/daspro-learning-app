@@ -1,13 +1,18 @@
+# SHINTA AYUNINGTIAS, S.Kom., M.Kom.
+# Ahmad Hasan Maki
+# 20240040032
+# 085777 07 6575
+# TI24B
+
 """Aplikasi CLI utama menampilkan dan mengelola menu interaktif."""
 
 from rich.console import Console
 from rich.panel import Panel
 from rich.prompt import Prompt
 
-# Change from relative imports to absolute imports
-from calculator import calculator
-from data_types import show_data_types
-from geometry import calculate_area
+from modules.calculator.calculator import calculator
+from modules.data_types.data_types import show_data_types
+from modules.geometry.geometry import calculate_area
 
 console = Console()
 

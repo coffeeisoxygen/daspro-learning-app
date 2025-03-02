@@ -1,15 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "learning-python"
 version = "0.1.0"
-description = "Project Pembelajaran Python"
+description = "Simple CLI app for learning Python basics"
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "rich>=13.9.4",
-]
+requires-python = ">=3.8"
+authors = [{ name = "Ahmad Hasan Maki" }]
+dependencies = ["rich>=13.0.0"]
 
-[tool.setuptools]
-package-dir = {"" = "src"}
+[project.scripts]
+learning-python = "src.main:main"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.uv]
+python = "3.8"
