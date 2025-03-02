@@ -12,6 +12,7 @@ requires-python = ">=3.12"
 dependencies = ["rich>=13.0.0"]
 
 [project.scripts]
-learning-python = "main:main"
+learning-python = "src.main:main"
+clean-cache = "src.scripts.clean_cache:clean_cache"
 
 [tool.hatch.build.targets.wheel]
