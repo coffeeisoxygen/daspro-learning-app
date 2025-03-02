@@ -13,6 +13,7 @@ from rich.prompt import Prompt
 from modules.calculator.calculator import calculator
 from modules.data_types.data_types import show_data_types
 from modules.geometry.geometry import calculate_area
+from modules.volumes.volumes import calculate_volume
 
 console = Console()
 
@@ -21,6 +22,7 @@ MENU_OPTIONS = {
     "1": {"name": "Pengenalan Tipe Data", "function": show_data_types},
     "2": {"name": "Kalkulator", "function": calculator},
     "3": {"name": "Hitung Luas", "function": calculate_area},
+    "4": {"name": "Hitung Volume", "function": calculate_volume},
     "0": {"name": "Keluar", "function": None},
 }
 
